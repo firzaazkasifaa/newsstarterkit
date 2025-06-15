@@ -1,0 +1,26 @@
+/* 1. Tailwind (Wajib di paling atas) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Font Bunny (opsional) */
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+/* 3. Custom class contoh */
+.card {
+  @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white p-6 rounded-lg shadow-lg;
+}
+
+/* 4. Variabel SCSS (jika ada) */
+// @import 'variables';
+
+/* 5. Bootstrap (harus di bawah Tailwind!) */
+@import 'bootstrap/scss/bootstrap';
+
+/* 6. Font Awesome */
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+
